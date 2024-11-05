@@ -1,0 +1,22 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": false,
+    "nodeVersion": "18.17.1",
+    "sdksVersions": {
+      "@microsoft/microsoft-graph-client": "3.0.2",
+      "@microsoft/teams-js": "2.24.0"
+    },
+    "version": "1.19.0",
+    "libraryName": "ticket-app",
+    "libraryId": "d2bc4775-0c32-4c01-ae0c-3e8b9c8f6515",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "ticket-app",
+    "solutionShortDescription": "ticket-app description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "framework": "react",
+    "componentType": "webpart"
+  }
+}

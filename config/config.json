@@ -1,0 +1,41 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "registration-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/registration/RegistrationWebPart.js",
+          "manifest": "./src/webparts/registration/RegistrationWebPart.manifest.json"
+        }
+      ]
+    },
+    "user-login-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/userLogin/UserLoginWebPart.js",
+          "manifest": "./src/webparts/userLogin/UserLoginWebPart.manifest.json"
+        }
+      ]
+    },
+    "auth-container-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/authContainer/AuthContainerWebPart.js",
+          "manifest": "./src/webparts/authContainer/AuthContainerWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {
+    "@microsoft/sp-core-library": "node_modules/@microsoft/sp-core-library/dist/sp-core-library.js",
+    "react": "https://unpkg.com/react@17/umd/react.production.min.js",
+    "react-dom": "https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"
+  },
+  "localizedResources": {
+    "RegistrationWebPartStrings": "lib/webparts/registration/loc/{locale}.js",
+    "UserLoginWebPartStrings": "lib/webparts/userLogin/loc/{locale}.js",
+    "ControlStrings": "node_modules/@pnp/spfx-controls-react/lib/loc/{locale}.js",
+    "AuthContainerWebPartStrings": "lib/webparts/authContainer/loc/{locale}.js"
+  }
+}

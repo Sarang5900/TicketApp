@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "ticket-app-client-side-solution",
+    "id": "d2bc4775-0c32-4c01-ae0c-3e8b9c8f6515",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.20.0"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "ticket-app description"
+      },
+      "longDescription": {
+        "default": "ticket-app description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "ticket-app Feature",
+        "description": "The feature that activates elements of the ticket-app solution.",
+        "id": "dbc89057-850a-466d-b626-85524064a268",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/ticket-app.sppkg"
+  }
+}

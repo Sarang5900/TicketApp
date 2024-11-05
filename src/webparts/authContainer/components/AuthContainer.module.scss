@@ -1,0 +1,57 @@
+@import '~@fluentui/react/dist/sass/References.scss';
+
+.authContainerOuter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f2f5;
+}
+
+.authContainerCard {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.welcomeText {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.registerButton,
+.loginButton {
+  flex: 1;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.registerButton:hover {
+  background-color: #45a049;
+}
+
+.loginButton:hover {
+  background-color: #1976d2;
+}
+
+.loginContainer,
+.registerContainer {
+  width: 100%;
+}
+
+.authContainer .registerContainer {
+  text-align: left;
+}

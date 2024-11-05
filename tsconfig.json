@@ -1,0 +1,45 @@
+{
+  "extends": "./node_modules/@microsoft/rush-stack-compiler-4.7/includes/tsconfig-web.json",
+  "compilerOptions": {
+    "target": "es6",
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "jsx": "react",
+    "declaration": true,
+    "sourceMap": true,
+    "experimentalDecorators": true,
+    "skipLibCheck": true, 
+    "outDir": "lib",
+    "inlineSources": false,
+    "noImplicitAny": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "typeRoots": [
+      "./node_modules/@types",
+      "./node_modules/@microsoft"
+    ],
+    "types": [
+      "webpack-env"
+    ],
+    "lib": [
+      "es6", 
+      "dom",
+      "es2015.collection",
+      "es2015.promise",
+      "es2019" 
+    ]
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules", 
+    "**/*.spec.ts", 
+    "**/*.test.tsx"
+  ],
+  "externals": {
+    "@microsoft/sp-core-library": "node_modules/@microsoft/sp-core-library/dist/sp-core-library.js"
+  }
+}
